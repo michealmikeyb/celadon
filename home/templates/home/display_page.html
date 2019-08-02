@@ -1,0 +1,15 @@
+<title>{{ title }}</title>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    {% include 'home/navbar.html' %}
+</head>
+<body>
+    <div id="content">
+        <h1>{{ title }}</h1>
+        <hr>
+        <p>
+            {{ content }}
+        </p>
+    </div
+</body>

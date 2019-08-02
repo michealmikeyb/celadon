@@ -1,0 +1,58 @@
+{% load static %}
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{% url 'landing' %}"><img src="{% static 'images/logo.svg' %}"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Licensing and Planning
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item"><a href="{% url 'display-page' 'pre_construction_analysis' %}">Pre-Construction Consulting</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'security_prep' %}">Securing Plan Preparation</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'fire_alarm' %}">Fire Plan Preparation</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'mechanical' %}">Mechanical</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'electrical' %}">Electrical</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'architectural' %}">Architectural</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'legal' %}">Legal</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" >Services
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item"><a href="{% url 'display-page' 'securing' %}">Securing</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'access_control' %}">Access Control</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'cctv' %}">CCTV</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'av' %}">A/V</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'network' %}">Network</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'carrier' %}">Carrier</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'fire_system' %}">Fire Systems</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'chemical_grow' %}">Chemical / Grow Consulting</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'website' %}">Website</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'marketing' %}">Marketing</a></li>
+        </ul>
+      </li><li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" >Solutions
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item"><a href="{% url 'display-page' 'process_analytics' %}">Business Process Analysis</a></li>
+          <li class="dropdown-item"><a href="{% url 'display-page' 'electrical_analytics' %}">Analytics</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{% url 'display-page' 'pre_construction_analysis' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    <div
+  </div>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

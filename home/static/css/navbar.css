@@ -1,0 +1,31 @@
+
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+  background-color: #ace1af;
+  color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.nav li:hover {
+  background-color: #ace1af;
+}
+
+.dropdown-item:hover {
+  background-color: #ace1af;
+}
+
+.navbar img {
+  height: inherit;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar {
+  margin: 0;
+  position: sticky;
+}
